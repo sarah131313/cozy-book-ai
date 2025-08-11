@@ -3,7 +3,7 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 require('dotenv').config();
-console.log("Loaded OPENROUTER_KEY:", process.env.OPENROUTER_KEY ? "YES" : "NO");
+
 
 
 const app = express();
@@ -55,7 +55,7 @@ Always keep the recommendations relevant to the user's input theme, but strictly
 });
 
 // Start server on port 4000 (or environment PORT)
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`Backend listening on port ${PORT}`);
 });
