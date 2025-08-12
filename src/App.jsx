@@ -4,7 +4,7 @@ import GetBooks from "./components/GetBooks"
 import { getBookRecommendation } from "./api/openRouterAPI"
 import { fetchCover } from "./api/fetchCover"
 import aiIcon from "./assets/ai-icon.png"
-import "./App.css";
+import "./App.css"
 
 export default function App() {
   const [result, setResult] = useState([])
