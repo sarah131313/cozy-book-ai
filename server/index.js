@@ -47,8 +47,8 @@ Always keep the recommendations relevant to the user's input theme, but strictly
     );
 
     // Send back the AI response to frontend
-    // res.json(response.data.choices[0].message.content);
-    res.json({ content: response.data.choices[0].message.content })
+    res.json(response.data.choices[0].message.content)
+    
 
   } catch (error) {
     console.error("OpenRouter API error:", error.response?.data || error.message)
